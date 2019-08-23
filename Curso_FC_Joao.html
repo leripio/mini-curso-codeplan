@@ -3115,18 +3115,17 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">16 de agosto de 2019</p>
+            <p style="margin-top: 6px; margin-left: -2px;">26 de agosto de 2019</p>
           </hgroup>
   </slide>
 
 <slide class=""><hgroup><h2>O que vamos aprender hoje?</h2></hgroup><article  id="o-que-vamos-aprender-hoje">
 
 <ol>
-<li><p>Dessazonalização, interpolação e algumas visualizações úteis.</p></li>
-<li><p>Geração da apresentação do IPCA automaticamente.</p></li>
+<li>Dessazonalização, interpolação e algumas visualizações úteis.</li>
 </ol>
 
-<p><strong>3. rafa: algoritmo para previsão de séries temporais.</strong></p>
+<p><strong>2. rafa: algoritmo para previsão de séries temporais.</strong></p>
 
 <p><font size="6"><strong>Objetivos gerais</strong></font></p>
 
@@ -3140,6 +3139,7 @@ slide:not(.current) .plotly.html-widget{
 <ul>
 <li>Série temporal: <strong>Taxa de desocupação (PED/DF)</strong></li>
 <li>R: pacote <strong><em>forecast</em></strong> (Hyndman et al, 2019).</li>
+<li>R: pacote <strong><em>rafa</em></strong> (Leripio, 2019)</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Configurações preliminares</h2></hgroup><article  id="configuracoes-preliminares">
@@ -3358,7 +3358,7 @@ ped_prev_arima</pre>
 
 <a id="displayText" href="javascript:toggle(1);">Mostrar fórmulas</a>
 
-<div id="toggleText1" style="display: none">
+<div style="display: none" id="toggleText1">
 <p>\[ MAE = \frac{1}{T} \sum_{t=1}^{T}  \left \| \hat{Y_t} - Y_t \right \| \] \[ RMSE = \sqrt{\frac{\sum_{t=1}^{T} (\hat{Y_t} - Y_t)^2}{T}} \]</p></div>
 
 <p><br/></p>
@@ -3472,7 +3472,15 @@ ped_rafa &lt;- auto_forecast(ped_completa, test = c(2017,6), h = 6)</pre>
 ## 3     3  18.3       17.2        19.2
 ## 4     4  18.3       17.2        19.3
 ## 5     5  18.2       17.0        19.1
-## 6     6  18.0       16.7        19.0</pre></article></slide>
+## 6     6  18.0       16.7        19.0</pre>
+
+</article></slide><slide class=""><hgroup><h2>Obrigado!</h2></hgroup><article  id="obrigado">
+
+<ul>
+<li><p>Repositório: <a href='http://github.com/leripio' title=''>http://github.com/leripio</a></p></li>
+<li><p>Blog pessoal: <a href='http://www.rleripio.com.br/blog' title=''>http://www.rleripio.com.br/blog</a></p></li>
+<li><p>Contato: <a href='mailto:leripiorenato@gmail.com' title=''>leripiorenato@gmail.com</a></p></li>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>
