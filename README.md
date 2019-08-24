@@ -1,9 +1,3 @@
----
-title: "Técnicas básicas para previsão"
-author: "J. Renato Leripio"
-date: "26 de agosto de 2019"
-output: ioslides_presentation
----
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning=F)
